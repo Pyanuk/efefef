@@ -1,0 +1,53 @@
+﻿<Window x:Class="COFFE.Cashier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:COFFE"
+        mc:Ignorable="d"
+        Title="Cashier" Height="450" Width="800" Background="Aqua">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="-10,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Exit" Margin="67,10,0,10" Content="Выход" Background="AntiqueWhite" HorizontalAlignment="Left" Grid.Column="10" Width="74" Click="Exit_Click" Grid.ColumnSpan="2"/>
+            <Button x:Name="Warehouse" Margin="10,10,0,10" Content="Склад" Background="AntiqueWhite" HorizontalAlignment="Left" Width="64"  Grid.ColumnSpan="1" Click="Warehouse_Click"/>
+            <Button x:Name="Products" Margin="0,10,0,10" Content="Продукты" Background="AntiqueWhite" HorizontalAlignment="Center" Width="73" Grid.Column="1" Click="Products_Click"/>
+            <Button x:Name="ProductsCategorie" Margin="0,10,0,10" Content="Категория" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="2" Click="ProductsCategorie_Click"/>
+            <Button x:Name="Castomisehen" Margin="0,10,0,10" Content="Кастом" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="3" Click="Castomisehen_Click"/>
+            <Button x:Name="Coffe" Margin="0,10,0,10" Content="Кофе" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="4" Click="Coffe_Click"/>
+            <Button x:Name="TypeCoffe" Margin="0,10,0,10" Content="Тип коффе" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="5" Click="TypeCoffe_Click"/>
+            <Button x:Name="OrderCoofe" Margin="0,10,0,10" Content="Зак.кофе" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="6" Click="OrderCoofe_Click"/>
+            <Button x:Name="OrderDetalis" Margin="0,10,0,10" Content="Детали" Background="AntiqueWhite" HorizontalAlignment="Center" Width="68" Grid.Column="7" Click="OrderDetalis_Click"/>
+            <Button x:Name="Orders" Margin="0,10,0,10" Content="Заказы" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="8" Click="Orders_Click"/>
+            <Button x:Name="PayMet" Margin="0,10,0,10" Content="Оплата" Background="AntiqueWhite" HorizontalAlignment="Center" Width="74" Grid.Column="9" Click="PayMet_Click"/>
+            <Button x:Name="Cassa" Margin="0,10,0,10" Content="Касса" Background="AntiqueWhite" HorizontalAlignment="Center" Width="68" Grid.Column="10" Click="Cassa_Click" />
+
+
+
+
+
+
+
+
+            <Frame x:Name="PageFrame" Grid.ColumnSpan="11" Margin="21,89,24,-338" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Window>
